@@ -1,17 +1,22 @@
-node {
-    stage('npm install') {
-        sh "npm install"
-    }
+pipeline {
+    agent any 
+    tools { nodejs "nodejs" }
 
-    stage('Build') {
+    stages {
+        stage('npm install') {
+            sh "npm install"
+        }
 
-    }
+        stage('Build') {
 
-    stage('Run e2e tests') {
+        }
 
-    }
+        stage('Run e2e tests') {
 
-    stage('Deploy') {
+        }
 
+        stage('Deploy') {
+
+        }
     }
 }
