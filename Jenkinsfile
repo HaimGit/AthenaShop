@@ -1,6 +1,7 @@
 pipeline {
-    agent any 
-    tools { nodejs "nodejs" }
+    agent {
+        docker { image "node:hydrogen-bookworm"}
+    }
 
     stages {
         stage('npm install') {
