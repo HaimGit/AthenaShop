@@ -10,15 +10,21 @@ pipeline {
         }
 
         stage('Build') {
+            steps {
 
+            }
         }
 
         stage('Run e2e tests') {
+            steps {
 
+            }
         }
 
         stage('Deploy') {
-
+            steps {
+                
+            }
         }
     }
 }
